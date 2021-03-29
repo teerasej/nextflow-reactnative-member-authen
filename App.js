@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import AppLoading from 'expo-app-loading';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import {useEffectAsync} from 'useeffectasync'
 
 // import Font มาจาก package expo-font
 import * as Font from 'expo-font';
 // import Icon มาใช้งาน (ถ้าต้องการ)
 import { Ionicons } from '@expo/vector-icons';
+import Loading from './pages/Loading';
 
 // แปลง Function component 
 // เป็น Class component 
@@ -36,9 +37,7 @@ export default function App() {
 
     // แสดง User Interface ที่แท้จริงของแอพ
     return (
-      <View>
-        <Text>Hey..............</Text>
-      </View>
+      <Loading/>
     );
   
 }
